@@ -5,11 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   <link rel="stylesheet" href="main.css">
+   
 </head>
+
 <body>
     
+    <header>
+        <strong> <h1>Budget</h1></strong>
+        
+    </header>
 
+    <main>
+        
+        <div class="button">
+            <select name="choose" id="choose">
+                <option value="-" class="choose">Välj</option>
+                <option value="plus" class="plus">+</option>
+                <option value="minus" class="minus">-</option>
+            </select>
+            
+            <input type="text" id="Beskrivning" name="titel" placeholder="Beskrivning">
+            <input type="number" id="summa" name="Value" placeholder="summa">
+            <button >Lägg till</button>
+        </div>
 
-    
+        <section class="Inkomst">
+            <h1  >Inkomst Lista</h1>
+
+            <div class="inkomstList">
+
+            </div>
+        </section>
+        <br>
+        <br>
+        <section class=”kostnad”>
+            <h1>Kostnads Lista</h1>
+            <div class="kostnadsLista">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="vinst">   </div>
+
+        <script src="./JavaScript/main.js"></script>
+    </footer>
 </body>
+
 </html>

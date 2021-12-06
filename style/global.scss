@@ -1,0 +1,41 @@
+
+
+
+body {
+    background: rgb(144, 247, 247);
+}
+
+header {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(144, 247, 247);
+    color:  rgb(77, 70, 70);
+}
+
+button {
+    width: squareWidth;
+    height: squareHeight;
+    background: rgb(248, 153, 224);
+    color: rgb(77, 70, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:hover rgb(209, 245, 178);
+}
+
+h1 {
+    font-weight: 4000;
+}
+
+main {
+background: rgb(255, 196, 235);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+
+

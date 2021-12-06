@@ -1,0 +1,30 @@
+body {
+  background: #90f7f7; }
+
+header {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #90f7f7;
+  color: #4d4646; }
+
+button {
+  width: squareWidth;
+  height: squareHeight;
+  background: #f899e0;
+  color: #4d4646;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hover #d1f5b2; }
+
+h1 {
+  font-weight: 4000; }
+
+main {
+  background: #ffc4eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
