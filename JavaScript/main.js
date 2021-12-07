@@ -35,25 +35,20 @@ function choose(e){
             alert("Du måste välja + eller -");
         }
 
-        else {
-            alert("Fyll i formuläret")
-        }
-
         //Totalsumman av Inkomster - utgifter. 
 
     var summa = 0;
 
-   // loopa igenom inkomstLista och kostnadLista 
 
-   inkomstLista.map( (e)=> {
+    inkomstLista.map( (e)=> {
  
     incomeSum += parseFloat(e)
-})
+    })
 
-//console.log(incomeSum)
-kostnadsLista.map( (e)=> {
-costSum += parseFloat (e)
-})
-   document.querySelector(".totalSum").textContent = incomeSum - costSum;
+
+    kostnadsLista.map( (e)=> {
+    costSum += parseFloat (e)
+    })
+    document.querySelector(".totalSum").textContent = incomeSum - costSum;
    
 }
