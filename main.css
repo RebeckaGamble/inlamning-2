@@ -1,5 +1,18 @@
+@charset "UTF-8";
 body {
   background: #90f7f7; }
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px; }
 
 header {
   height: 20vh;
@@ -9,22 +22,42 @@ header {
   background: #90f7f7;
   color: #4d4646; }
 
-button {
-  width: squareWidth;
-  height: squareHeight;
-  background: #f899e0;
-  color: #4d4646;
-  display: flex;
+main {
+  background: #ffc4eb;
   justify-content: center;
   align-items: center;
-  background: hover #d1f5b2; }
+  height: 125vh;
+  padding-left: 20%;
+  padding-right: 20%; }
+
+button {
+  background: #f899e0;
+  color: #4d4646;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%; }
+
+button:hover {
+  background: #d1f5b2; }
 
 h1 {
   font-weight: 4000; }
 
-main {
-  background: #ffc4eb;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; }
+footer {
+  height: 10vh;
+  text-align: center;
+  padding-top: 3%; }
+
+/*För skärmar upp till 470px*/
+@media screen and (min-width: 280px) {
+  header {
+    height: 10vh; }
+  button {
+    flex-direction: column; }
+  .flex-center {
+    margin-bottom: 10%; }
+  main {
+    height: 75vh; }
+  footer {
+    padding-top: 7%; } }

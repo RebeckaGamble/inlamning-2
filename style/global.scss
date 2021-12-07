@@ -1,8 +1,20 @@
 
-
-
 body {
     background: rgb(144, 247, 247);
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 header {
@@ -14,28 +26,66 @@ header {
     color:  rgb(77, 70, 70);
 }
 
-button {
-    width: squareWidth;
-    height: squareHeight;
-    background: rgb(248, 153, 224);
-    color: rgb(77, 70, 70);
-    display: flex;
+main {
+    background: rgb(255, 196, 235);
     justify-content: center;
     align-items: center;
-    background:hover rgb(209, 245, 178);
+    height: 125vh;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+button {
+    background: rgb(248, 153, 224);
+    color: rgb(77, 70, 70);
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+button:hover{
+    background: rgb(209, 245, 178);
 }
 
 h1 {
     font-weight: 4000;
 }
 
-main {
-background: rgb(255, 196, 235);
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
+footer {
+    height: 10vh;
+    text-align: center;
+    padding-top: 3%;
+}
+
+/*För skärmar upp till 470px*/
+@media screen and (min-width: 470px){
+    header {
+        height: 10vh;
+    }
+    button{
+        flex-direction: column;
+        align-items:flex-start;
+
+
+        }
+    .flex-center {
+        margin-bottom: 10%;
+    }
+    main {
+        height: 75vh;
+    }
+    footer {
+        padding-top: 7%;
+    }
 }
 
 
+@media screen and (min-width: 900px){
+    footer {
+        height: 30vh;
+        margin-top: 2%
+        margin-bottom: 10%;
+        
+    }
 

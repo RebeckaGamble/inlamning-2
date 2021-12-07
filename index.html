@@ -17,12 +17,17 @@
     </header>
 
     <main>
-        
+
+        <div class="flex-center">   
+            <h1>Totalt</h1>
+            <div class="totalSum"></div>
+        </div>
+
         <div class="button">
             <select name="choose" id="choose">
-                <option value="-" class="choose">Välj</option>
-                <option value="plus" class="plus">+</option>
-                <option value="minus" class="minus">-</option>
+                <option value="-">Välj</option>
+                <option value="plus">+</option>
+                <option value="minus">-</option>
             </select>
             
             <input type="text" id="Beskrivning" name="titel" placeholder="Beskrivning">
@@ -30,30 +35,34 @@
             <button >Lägg till</button>
         </div>
 
-        <section class="Inkomst">
-            <h1  >Inkomst Lista</h1>
 
-            <div class="inkomstList">
 
+      
+        <section class="flex">
+            <div class="Inkomst">
+                <h1>Inkomst Lista</h1>
+                <div class="inkomstList">
+
+                </div>
+            </div>
+    
+            <div class=”kostnad”>
+                <h1>Kostnads Lista</h1>
+                <div class="kostnadsLista">
+
+                </div>
             </div>
         </section>
-        <br>
-        <br>
-        <section class=”kostnad”>
-            <h1>Kostnads Lista</h1>
-            <div class="kostnadsLista">
-
-            </div>
-
-        </section>
-
+    
     </main>
 
     <footer>
-        <div class="vinst">   </div>
-
-        <script src="./JavaScript/main.js"></script>
+        <div class="back"><a href="index.html">Tillbaka till toppen</a></div>
+        <p>&copy2021</p>
+        <p>Rebecka Gamble</p>
     </footer>
+        <script src="./JavaScript/main.js"></script>
+  
 </body>
 
 </html>
